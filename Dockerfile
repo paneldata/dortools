@@ -10,6 +10,7 @@ RUN apt update \
     texlive \
     texlive-xetex \
     texlive-generic-recommended \
+    python3.8 \
     && rm -rf /var/lib/apt/lists/* 
 
 RUN R  -e "install.packages('usethis')"
