@@ -7,12 +7,12 @@ RUN apt update \
     libssl-dev \
     libcurl4-openssl-dev \
     libxml2-dev \
-    telive \
+    texlive \
     texlive-xetex \
+    texlive-generic-recommended \
     && rm -rf /var/lib/apt/lists/* 
 
 RUN R  -e "install.packages('usethis')"
-RUN R  -e "install.packages('devtools')"
 RUN R  -e "install.packages('RCurl')"
 RUN R  -e "install.packages('rmarkdown')"
 RUN R  -e "install.packages('argparser')"
