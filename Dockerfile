@@ -1,4 +1,4 @@
-FROM r-base:3.6.2
+FROM r-base:latest
 
 RUN apt update \
     && apt install -y --no-install-recommends \
