@@ -9,8 +9,10 @@ RUN apt update \
     libxml2-dev \
     texlive \
     texlive-xetex \
-    texlive-generic-recommended \
+    texlive-fonts-recommended \
+    texlive-latex-recommended \
     python3.9 \
+    pandoc \
     && rm -rf /var/lib/apt/lists/* 
 
 RUN R  -e "install.packages('usethis')"
